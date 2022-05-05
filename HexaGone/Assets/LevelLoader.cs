@@ -27,8 +27,8 @@ public class LevelLoader : MonoBehaviour
 
     public void MenuLevel()
     {
-        StartCoroutine(LoadLevel(0));
         pauseMenu.Resume();
+        StartCoroutine(LoadLevel(0));
     }
 
     IEnumerator LoadLevel(int levelIndex)
