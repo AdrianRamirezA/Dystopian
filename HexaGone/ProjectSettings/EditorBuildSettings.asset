@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2_HostilesApproaching.unity
     guid: e05236d2468c01741ab89ecd11862307
+  - enabled: 1
+    path: Assets/Scenes/Endless Mode.unity
+    guid: 128577edd8637eb4d864e5f2ebe57e81
   m_configObjects: {}

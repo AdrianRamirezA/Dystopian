@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject gameObject;
+    public GameObject failSound;
+
     public float moveSpeed = 300f;
     float movement = 0f;
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //add reference to retry menu and add opposit of retry button method function
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameObject.SetActive(false);
+        failSound.SetActive(true);
     }
 }
